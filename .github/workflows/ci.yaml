@@ -2,12 +2,12 @@ name: ci-fastify-fullcycle
 on: 
   pull_request:
     branches:
-      - develop
+      - development
 jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout to Main branch
+      - name: Checkout to Main branch   
         uses: actions/checkout@v2
       
       - name: Installing PNPM
